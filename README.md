@@ -52,17 +52,20 @@ src/
 
 
  Application.properties
-properties
-Copy
-Edit
-spring.datasource.url=jdbc:mysql://localhost:3306/studentdb
+spring.application.name=StudentManagementSystem
+# MySQL Database Configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/StudenManagement
 spring.datasource.username=root
-spring.datasource.password=yourpassword
+spring.datasource.password=Jivan@30
 
+# JDBC Driver
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# JPA/Hibernate Configuration (if using JPA)
 spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
 
-server.port=8080
+spring.jpa.show-sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
 ## 🔗 REST Endpoints
 
 | Method | URL | Description |
