@@ -44,9 +44,8 @@ src/
 │   │   ├── service/          # Business logic layer
 │   │   ├── repository/       # JPA Repository
 │   │   └── entity/           # Student.java
-│   └── resources/
-│       ├── templates/        # Thymeleaf HTML files
-│       ├── static/           # CSS, JS, Images
+│   └── resources/     
+│       ├── static/           # Thymeleaf HTML files,CSS, JS, Images
 │       └── application.properties
 └── test/                     # JUnit test cases (optional)
 
