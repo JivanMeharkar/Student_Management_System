@@ -63,5 +63,28 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
 server.port=8080
+## 🔗 REST Endpoints
+
+| Method | URL | Description |
+|--------|-----|-------------|
+| GET | `/students` | List students |
+| POST | `/students/save` | Create student |
+| GET | `/students/edit/{id}` | View edit form |
+| POST | `/students/update/{id}` | Update student |
+| GET | `/students/delete/{id}` | Delete student |
+
+## 🚀 Running Locally
+
+```bash
+git clone https://github.com/JivanMeharkar/student-management-system.git
+cd student-management-system
+./mvnw spring-boot:run
+```
+
+Ensure MySQL database `studentdb` is running and credentials are set in `application.properties`.
+
+## 👤 Author
+
+**Jivan Meharkar** — MSc CS | Java & Spring Boot Developer
 
 
